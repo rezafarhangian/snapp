@@ -1,0 +1,61 @@
+@font-face {
+    font-family: "Vazir Regular";
+    src: url(/public/fonts/Vazir-Regular.ttf) format("truetype");
+  }
+
+
+.aboutus{
+margin-top: 5rem;
+display: flex;
+flex-direction: column;
+justify-content: space-around;
+align-items: center;
+}
+.aboutus__right{
+    width: 30rem;
+}
+.aboutus__img{
+ width: 100%;
+}
+.aboutus__left{
+ max-width: 30rem;
+}
+.aboutus__title{
+ font-family:  "Vazir Regular";
+ font-weight: bold;
+ font-size: 1.8rem;
+ color: #433f3e;
+}
+.aboutus__text{
+ margin-top: 2rem;
+ font-size: 1.3rem;
+ color: #a19a8f;
+}
+
+
+@media screen and (min-width: 768px) {
+    .aboutus{
+        flex-direction: row;
+    }
+    .aboutus__right{
+        width: 50rem;
+    }
+    
+    .aboutus__left{
+        margin-right: 3rem;
+
+    }
+}
+  
+
+@media screen and (min-width: 992px) {
+    .aboutus__left{
+        max-width: 40rem;
+    }
+    .aboutus__title{
+        font-size: 2rem;
+    }
+    .aboutus__text{
+        font-size: 1.5rem;
+    }
+}

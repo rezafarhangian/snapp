@@ -1,0 +1,77 @@
+@font-face {
+    font-family: "Vazir Black";
+    src: url(/public/fonts/Vazir-Black.ttf) format("truetype");
+  }
+  
+
+
+.servisec{
+ width: 12rem;
+ height: 13rem;
+ padding: 1rem;
+ background-color: #fff;
+ margin: 1rem;
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ justify-content: center;
+ border-radius: 25px;
+ text-align: center;
+}
+.servisec__img{
+    width: 6rem;
+}
+.servisec__name{
+    font-family:"Vazir Black";
+    color: #434145;
+}
+
+.servisec__text{
+    display: none;
+    font-size: 1.4rem;
+    color: rgb(136, 127, 127);
+}
+.servisec__wrapper{
+    display: flex;
+    flex-direction: column;
+    margin-right: 1rem;
+}
+
+
+ 
+ @media screen and (min-width: 576px) {
+
+  
+  }
+  
+  @media screen and (min-width: 768px) {
+    .servisec__text{
+        display: block;
+    }
+    .servisec{
+        width: 28rem;
+        height: 9rem;
+        margin: 2rem;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-start;
+    }
+    .servisec__name{
+        font-size: 1.6rem;
+        margin-bottom: .5rem;
+    }
+    .servisec__wrapper{
+        text-align: start;
+    }
+  }
+  
+  @media screen and (min-width: 992px) {
+
+   }
+  
+  @media screen and (min-width: 1200px) {
+
+    
+  }
+  
+   

@@ -1,0 +1,41 @@
+@font-face {
+    font-family: "Vazir Black";
+    src: url(/public/fonts/Vazir-Black.ttf) format("truetype");
+  }
+  
+
+.advantages{
+   background-color: #fff;
+   margin: 1rem;
+   width: 30rem;
+   border-radius: 10px;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   text-align: center;
+}
+.advantages__right{
+ 
+}
+.advantages__left{
+  padding:  1rem;
+}
+.advantages__title{
+  font-family: "Vazir Black";
+  color:#433f3f ;
+  margin-bottom: 1.5rem;
+}
+.advantages__text{ 
+    font-size: 1.3rem;
+    color:#717986 ;
+}
+
+
+@media screen and (min-width: 992px) {
+    .advantages{
+        flex-direction: row;
+        width: 50rem;
+        height: 20rem;
+    }
+}

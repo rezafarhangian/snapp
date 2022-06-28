@@ -1,0 +1,139 @@
+@font-face {
+  font-family: "Vazir";
+  src: url(/public/fonts/Vazir-Light.ttf) format("truetype");
+}
+@font-face {
+  font-family: "Vazir Regular";
+  src: url(/public/fonts/Vazir-Regular.ttf) format("truetype");
+}
+@font-face {
+  font-family: "Vazir Black";
+  src: url(/public/fonts/Vazir-Black.ttf) format("truetype");
+}
+
+
+.header__left {
+  width: 100%;
+  height: 25rem;
+}
+.header__img {
+  width: 100%;
+  height: 100%;
+}
+.header__right {
+  width: 100%;
+  color: #fff;
+  background-color: #21aa58;
+}
+.header__wrapper {
+  padding: 3rem 2.5rem;
+  max-width: 50rem;
+}
+.header__title {
+  font-family: "Vazir Black";
+  font-size: 2.5rem;
+}
+.header__des {
+  margin-top: 1.5rem;
+}
+.send-number {
+  display: none;
+  align-items: center;
+  justify-content: flex-start;
+  margin-top: 2rem;
+  margin-bottom: 5rem;
+  width: 33rem;
+}
+.send-number__wrapper{
+ border-bottom: 1px solid #fff;
+ width: 20rem;
+}
+.send-number__input {
+    background-color: transparent;
+    border: 0;
+    outline: 0;
+    color: rgb(223, 209, 209);
+    padding: 1rem;
+}
+::placeholder {
+    color: rgb(224, 207, 207);
+    
+  }
+  span{
+    display: inline-block;
+    width: 6px;
+    height: 6px;
+    background-color: #fff;
+    border-radius: 50%;
+    margin-right: .5rem;
+  }
+.send-number__btn {
+    padding: 1rem 2rem;
+    border-radius: 5px;
+    border: 0;
+    cursor: pointer;
+    color: #21aa58;
+    font-family: "vazir";
+    font-weight: bold;
+    margin-right: 1.5rem;
+    background-color: #fff;
+    
+
+}
+.header__btn {
+  border: 0;
+  margin-top: 2rem;
+  width: 26rem;
+  height: 5rem;
+  border-radius: 5px;
+  font-weight: bold;
+  font-size: 1.5rem;
+  font-family: "Vazir";
+  background: #fff;
+  cursor: pointer;
+}
+.header__btn--active{
+    display: none;
+}
+
+
+@media screen and (min-width: 768px) {
+  .header {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+  .header__right{
+            height: 47rem;
+            padding-right: 4rem;
+        }
+  .header__left{
+      height: 47rem;
+
+  }
+  .header__title{
+    font-size: 3rem;
+  }
+  .send-number {
+    display: flex;
+  }
+  .header__btn{
+    display: none;
+  }
+  .header__btn--active{
+    display: block;
+    background-color: transparent;
+    border: 1px solid #fff;
+    color: #fff;
+  }
+}
+
+@media screen and (min-width: 990px){
+  .header__right{
+    height: 43rem;
+    padding-right: 4rem;
+}
+.header__left{
+height: 43rem;
+
+}
+}

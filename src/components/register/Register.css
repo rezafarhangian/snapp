@@ -1,0 +1,73 @@
+@font-face {
+    font-family: "Vazir Black";
+    src: url(/public/fonts/Vazir-Black.ttf) format("truetype");
+  }
+  @font-face {
+    font-family: "Vazir";
+    src: url(/public/fonts/Vazir-Light.ttf) format("truetype");
+  }
+
+.register-wrapper{
+    background-color: #f1f5f8;
+    padding-bottom: 2rem;
+}
+
+.register{ 
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.register__title{
+ font-family: "Vazir Black";
+ padding-top: 4rem;
+ font-size: 2.5rem;
+ color: #404141;
+ margin-bottom: 1rem;
+}
+.register__text{
+ color: #606468;
+ margin-bottom: 2rem;
+}
+.register__btn{
+border: 0;
+ padding: .8rem 1.3rem;
+ cursor: pointer;
+ background-color: #00d170;
+ color: #fff;
+ font-weight: bold;
+ font-family: "Vazir";
+ border-radius: 5px;
+ margin-bottom: 3rem;
+}
+.register__video{
+    width: 30rem;
+}
+
+
+
+@media screen and (min-width: 768px) {
+    .register__video{
+        width: 45rem;
+    }
+    
+    
+  }
+  
+  @media screen and (min-width: 992px) {
+    .register__video{
+        width: 102rem;
+    }
+    .register__title{
+        font-size: 3.5rem;
+    }
+    .register__btn{
+        padding: 1.3rem 4rem;
+        font-size: 1.5rem;
+    }
+    .register__text{
+        font-size: 1.7rem;
+    }
+    
+   }

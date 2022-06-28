@@ -1,0 +1,22 @@
+.features{
+    margin: 1rem;
+    width: 23rem;
+    text-align: center;
+}
+
+.features__img{
+    border-radius: 20px;
+    width: 100%;
+    background-color: #f1f5f8;
+
+}
+.features__title{
+ margin-top: 1rem;
+ font-weight: bold;
+ font-size: 1.8rem;
+}
+.features__text{
+ font-size: 1.3rem;
+ color: #6a6862;
+ margin-top: 1rem;
+}

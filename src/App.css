@@ -1,38 +1,215 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+@font-face {
+    font-family: "Vazir";
+    src: url(../public/fonts/Vazir-Light.ttf) format("truetype");
   }
-}
+  @font-face {
+    font-family: "Vazir Regular";
+    src: url(../public/fonts/Vazir-Regular.ttf) format("truetype");
+  }
+  @font-face {
+    font-family: "Vazir Black";
+    src: url(../public/fonts/Vazir-Black.ttf) format("truetype");
+  }
+  
+  
+  
+  
+  
+  html, body, div, span, applet, object, iframe,
+  h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+  a, abbr, acronym, address, big, cite, code,
+  del, dfn, em, img, ins, kbd, q, s, samp,
+  small, strike, strong, sub, sup, tt, var,
+  b, u, i, center,
+  dl, dt, dd, ol, ul, li,
+  fieldset, form, label, legend,
+  table, caption, tbody, tfoot, thead, tr, th, td,
+  article, aside, canvas, details, embed, 
+  figure, figcaption, footer, header, hgroup, 
+  menu, nav, output, ruby, section, summary,
+  time, mark, audio, video {
+      margin: 0;
+      padding: 0;
+      border: 0;
+      font-size: 100%;
+      font: inherit;
+      vertical-align: baseline;
+  }
+  /* HTML5 display-role reset for older browsers */
+  article, aside, details, figcaption, figure, 
+  footer, header, hgroup, menu, nav, section {
+      display: block;
+  }
+  body {
+      line-height: 1;
+  }
+  ol, ul {
+      list-style: none;
+  }
+  blockquote, q {
+      quotes: none;
+  }
+  blockquote:before, blockquote:after,
+  q:before, q:after {
+      content: '';
+      content: none;
+  }
+  table {
+      border-collapse: collapse;
+      border-spacing: 0;
+  }
+  
+  
+  html {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    font-size: 62.5%;
+  }
+  
+  *,
+  *::before,
+  *::after {
+    -webkit-box-sizing: inherit;
+    box-sizing: inherit;
+  }
+  
+  body {
+    font-size: 1.6rem;
+    font-family: "Vazir";
+    line-height: 1.6;
+  }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+
+
+  /* !================download app======================== */
+  .download-container{
+    display: flex;
+    justify-content: center;
+    margin: 5rem 0;
+    display: none;
+  }
+  
+  /* !================style scrollbar======================== */
+  ::-webkit-scrollbar {
+    width: 6px;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #21aa58; 
+    border-radius: 10px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    cursor: pointer;
+    background: #198645; 
+  }
+
+
+
+/* !=====================services======================= */
+  
+  .services-wrapper{
+    background-color: rgb(228, 228, 228);
+    padding-bottom: 4rem;
+    
+  }
+ .services-container{
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  flex-wrap: wrap;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  margin-top: 2rem;
+ }
+
+
+.services-title{
+  text-align: center;
+  font-family: "Vazir Black";
+  padding-top: 3rem;
+  font-size: 2rem;
+  color: #3f4042;
 }
 
-.App-link {
-  color: #61dafb;
+
+  /* !================Features-wrapperr======================== */
+
+
+.Features-wrapper{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 4rem 0;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+
+/* !=====================advantages======================== */
+
+
+.advantages-wrapper{
+ background-color: #f1f5f8;
+ display: flex;
+ flex-wrap: wrap;
+ justify-content: center;
+ align-items: center;
+ padding: 4rem 0 5rem 0;
 }
+
+/*! ==================Media=================== */
+.media-wrapper{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 20rem;
+}
+.icons{
+  width: 3rem;
+  height: 3rem;
+  color: #656565;
+}
+
+
+
+
+/*! ==================responsive=================== */
+
+
+
+
+  .container{
+    width: 100%;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+  }
+  
+  @media screen and (min-width: 576px) {
+    .container{
+          width: 54rem;
+    }
+  
+  }
+  
+  @media screen and (min-width: 768px) {
+    .container{
+          width: 72rem;
+    }
+    .services-title{
+      font-size: 3.5rem;
+    }
+    
+  }
+  
+  @media screen and (min-width: 992px) {
+    .download-container{
+      display: flex;
+    }
+   }
+  
+  @media screen and (min-width: 1200px) {
+    .container{
+          width: 114rem;
+    } 
+    
+  }
+  
+   
